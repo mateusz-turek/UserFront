@@ -1,0 +1,12 @@
+<body>
+    <p>Post user</p>
+    <form (ngSubmit)= "onSubmit()">
+    <label for="nameField">name</label> <br>
+    <input type="text" [(ngModel)] = model.name name="name" id="nameField"> <br>
+    <label for="surnameField">surname</label> <br>
+    <input type="text" [(ngModel)] = model.surname name="surname" id="surnameField"> <br>
+    <label for="ageField">age</label> <br>
+    <input type="text" [(ngModel)] = model.age name="age" id="ageField" > <br>
+    <input type="submit" value="send">
+    </form>
+</body>

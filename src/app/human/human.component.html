@@ -1,0 +1,61 @@
+<p>human works!</p>
+
+<p>Iterate from backend List</p>
+<div class="container">
+    <table class="table" border="2px">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let humanModel of humanModel">
+                <td>{{humanModel.name}}</td>
+                <td>{{humanModel.surname}}</td>
+                <td>{{humanModel.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+<p>delete user</p>
+<form (ngSubmit) = "deleteUser(id.value)">
+    <input type="text" #id>
+    <button>deleteUser</button>
+</form>
+
+<p>find one user</p>
+
+<form (ngSubmit) = "findUser(id2.value)">
+    <input type="text" #id2>
+    <button>find User</button>
+</form>
+
+<p>one user of id {{id2.value}}</p>
+<div class="container2">
+    <table class="table" border="2px">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{oneHuman.name}}</td>
+                <td>{{oneHuman.surname}}</td>
+                <td>{{oneHuman.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+<p>=====================================</p>
+
+
+
+
